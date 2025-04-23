@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="6=*p.=Ek[{j1QZ2PK$?*">Player</variable><variable type="KIND_SpriteKind" id="gzbm45SjN1mVd2-j=Mhb">Projectile</variable><variable type="KIND_SpriteKind" id="]|@4s_nf3kYir/P?hF,Q">Food</variable><variable type="KIND_SpriteKind" id="y.FY5sFsS19dmA.#OWkp">Enemy</variable><variable id="X(j8,P?o0KuQ;i*K;=2!">mySprite</variable><variable id="a$[]_t.eV~*i2$@/EHl8">Score</variable></variables><block type="pxt-on-start" id="M=^/7UD=^emx%%}L*A@=" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="kUgKYdC48K*gnQ{ys]e#"><field name="VAR" id="X(j8,P?o0KuQ;i*K;=2!">mySprite</field><value name="VALUE"><shadow type="math_number" id="9g]ocdjOScD,+L$+|/co"><field name="NUM">0</field></shadow><block type="spritescreate" id=",D+;ze4fin{2CQB~W3UB"><value name="img"><shadow type="screen_image_picker" id="#wxQT{3:LEk5-C5i=SCY"><field name="img">img`
+. . . . . . 2 2 2 2 . . . . . . 
+. . . . 2 2 3 3 3 3 2 e . . . . 
+. . . 2 3 d 1 1 d d 3 2 e . . . 
+. . 2 3 1 d 3 3 3 d d 3 e . . . 
+. 2 3 1 3 3 3 3 3 d 1 3 b e . . 
+. 2 1 d 3 3 3 3 d 3 3 1 3 b b . 
+2 3 1 d 3 3 1 1 3 3 3 1 3 4 b b 
+2 d 3 3 d 1 3 1 3 3 3 1 3 4 4 b 
+2 d 3 3 3 1 3 1 3 3 3 1 b 4 4 e 
+2 d 3 3 3 1 1 3 3 3 3 1 b 4 4 e 
+e d 3 3 3 3 d 3 3 3 d d b 4 4 e 
+e d d 3 3 3 d 3 3 3 1 3 b 4 b e 
+e 3 d 3 3 1 d d 3 d 1 b b e e . 
+. e 3 1 1 d d 1 1 1 b b e e e . 
+. . e 3 3 3 3 3 3 b e e e e . . 
+. . . e e e e e e e e e e . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="#f(TTR9I3Py0.QtjIgTG"><field name="MEMBER">Player</field></shadow></value></block></value></block></statement></block><block type="keyonevent" id="2MV`Pw%[)r*U%B_Hboyb" x="127" y="194"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="startEffectOnSprite" id=";,_1hY/D])dHF;B]uQ?g"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.spray</field><value name="sprite"><block type="variables_get" id="l/eaWYfx-V!`oZJO|RZN"><field name="VAR" id="X(j8,P?o0KuQ;i*K;=2!">mySprite</field></block></value><value name="duration"><shadow type="timePicker" id="iomTGYC23L3i0p:O.~dZ"><field name="ms">200</field></shadow></value><next><block type="variables_change" id="WSz){I{3dEmQlW`o~Wm("><field name="VAR" id="a$[]_t.eV~*i2$@/EHl8">Score</field><value name="VALUE"><shadow type="math_number" id="hQR8}k:Xu0W02Jvzu6W_"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></xml>
